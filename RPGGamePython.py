@@ -3,10 +3,26 @@ import random
 
 def story():
     print('''
-    
-    fix the intro to this game plz
-    
-    Press Number to make your move.
+      _,.
+    ,` -.)
+   ( _/-\\-._
+  /,|`--._,-^|            ,
+  \_| |`-._/||          ,'|
+    |  `-, / |         /  /
+    |     || |        /  /
+     `r-._||/   __   /  /           Greetings, Holy Knight!
+ __,-<_     )`-/  `./  /            Welcome to the Kingdom of Pythoon!
+'  \   `---'   \   /  /             A kingdom that's perfect for beginners.
+    |           |./  /              
+    /           //  /               Beware! The Demon Knight is invading!
+\_/' \         |/  /                Please take your holy sword, Excalibur,
+ |    |   _,^-'/  /                 and eliminate this threat!
+ |    , ``  (\/  /_
+  \,.->._    \X-=/^                 ~Best of luck~
+  (  /   `-._//^`
+   `Y-.____(__}
+    |     {__)
+          ()
     
     ''')
     play_again = True
@@ -22,11 +38,11 @@ def story():
         if turn == 1:
             player_turn = True
             enemy_turn = False
-            print("\nYou make the first strike. Good luck!")
+            print("\nYou strike first. Swing it like you mean it!")
         else:
             player_turn = False
             enemy_turn = True
-            print("\nYour opponent makes the first move. Watch out!")
+            print("\nDemon Knight sneaks up on you. Watch out!")
 
         print(f'''
             Player Health: {player_health}
@@ -75,7 +91,7 @@ def story():
                     elif player_move == (3):
                         heal_up = True  # heal activated
                         player_move = moves["Potion"]
-                        print("\nYou chug a Potion and throw the bottle. It heals %s damage." % (
+                        print("\nYou chug a Potion and throw the bottle in the reycling bin. It heals %s damage." % (
                             player_move))
                     else:
                         print(
@@ -92,7 +108,7 @@ def story():
 
                 if miss:
                     enemy_move = 0  # the computer misses and deals no damage
-                    print("\nThe gods have blessed you! Your opponent misses ")
+                    print("\nThe gods have blessed you! Your opponent misses!")
                 else:
                     if enemy_health > 300:
                         if player_health > 750:
