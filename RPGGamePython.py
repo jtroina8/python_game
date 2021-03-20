@@ -184,7 +184,7 @@ def story():
         # once main game while loop breaks, determine winner and congratulate
 
         if winner == "Player":
-            print("\nWe have a Champion! You did it!")
+            print("\nWe have a Champion! You've defeated Demon Knight, saved the kingdom, and the King gave you a discount on your taxes. Nice!")
         else:
             print("\nYou have fallen in battle. The land is in ruins... Shucks.")
 
